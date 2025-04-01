@@ -78,7 +78,7 @@ match pagamento:
         print(f"Seu acrescimo foi de: {acrescimo}")
         print(f"Sua comando deu no total: {acrescimo2} ")
         
-print(f"Os pratos escolhidos foram {pedidos}")
+print(f"Os pratos escolhidos foram {comida}")
 
 
 
