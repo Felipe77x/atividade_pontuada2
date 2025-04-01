@@ -3,7 +3,7 @@ os.system("cls || clear")
 
 comanda = 0
 contador = 0
-comida = ""
+comida = " " 
 
 
 
@@ -52,7 +52,7 @@ Código \t Prato \t\t Preço
         case _:
             print("codigo invalido.")
 
-    comida += prato + " "
+    comida += prato + ", " 
     
     permissao = int(input("Deseja pedir mais um prato? Digite '0' para encerrar a comanda, caso queira prosseguir, digite '1': "))
     if permissao == 0:
@@ -76,7 +76,7 @@ match pagamento:
         print(f"\nValor total comanda {comanda}")
         print(f"Forma de pagemento: {pagamento}")
         print(f"Seu acrescimo foi de: {acrescimo}")
-        print(f"Sua comando deu no total: {acrescimo2} ")
+        print(f"Sua comanda deu no total: {acrescimo2} ")
         
 print(f"Os pratos escolhidos foram {comida}")
 
