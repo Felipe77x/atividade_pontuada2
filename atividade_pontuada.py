@@ -4,7 +4,7 @@ os.system("cls || clear")
 comanda = 0
 contador = 0
 comida = " " 
-
+codigos_pratos = " "
 
 
 while True:
@@ -25,39 +25,48 @@ Código \t Prato \t\t Preço
             comanda += 25
             contador += 1
             prato = "Lasanha"
+            codigos = "1"
         case 2:
             prato = "Feijoada"
             comanda += 25
             contador += 1
+            codigos = "2"
         case 3:
             prato = "Frango assado"
             contador += 1
             comanda += 18
+            codigos ="3"
         case 4:
             prato = "Pizza"
             contador += 1
             comanda += 23
+            codigos ="4"
         case 5:
             prato = "Parmegiana"
             contador += 1
-            comanda += 30 
+            comanda += 30
+            codigos ="5"
         case 6:
             prato = "Sushi"
             contador += 1
             comanda += 120
+            codigos ="6"
         case 7:
             prato = "Miojo"
             contador += 1
             comanda += 3
+            codigos ="7"
         case _:
             print("codigo invalido.")
 
-    comida += prato + ", " 
+    
     
     permissao = int(input("Deseja pedir mais um prato? Digite '0' para encerrar a comanda, caso queira prosseguir, digite '1': "))
     if permissao == 0:
-        break
+     break
 
+    comida += prato + " " 
+    codigos_pratos += codigos + " "
 pagamento = int(input("Qual a forma de pagamento  ? 1 para avista e 2 para cartão de credito: "))
     
 match pagamento:
@@ -78,7 +87,8 @@ match pagamento:
         print(f"Seu acrescimo foi de: {acrescimo}")
         print(f"Sua comanda deu no total: {acrescimo2} ")
         
-print(f"Os pratos escolhidos foram {comida}")
+print(f"Os pratos escolhidos foram  {comida}")
+print(f"Os pratos escolhidos foram  {comida + codigos_pratos}" )
 
 
 
