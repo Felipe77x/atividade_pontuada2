@@ -3,7 +3,9 @@ os.system("cls || clear")
 
 comanda = 0
 contador = 0
-comida= ""
+comida = ""
+
+
 
 while True:
     cardapio = int(input("""
@@ -51,7 +53,7 @@ Código \t Prato \t\t Preço
             print("codigo invalido.")
 
     comida += prato + " "
-  
+    
     permissao = int(input("Deseja pedir mais um prato? Digite '0' para encerrar a comanda, caso queira prosseguir, digite '1': "))
     if permissao == 0:
         break
@@ -76,7 +78,7 @@ match pagamento:
         print(f"Seu acrescimo foi de: {acrescimo}")
         print(f"Sua comando deu no total: {acrescimo2} ")
         
-print(comida)
+print(f"Os pratos escolhidos foram {pedidos}")
 
 
 
